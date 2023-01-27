@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plaster&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --color1: #f2bb05;
+  --color2: #4464ad;
+  --color3: #b12d20;
+  --color4: #ebe3d5;
+  --color5: #170f02;
+}
+
+body {
+  background-color: var(--color4);
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+nav {
+  font-family: "Plaster", cursive;
+}
