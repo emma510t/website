@@ -7,6 +7,12 @@
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+  display: block;
+  align-self: stretch;
+  object-fit: cover;
+}
 html {
   --color1: #f2bb05;
   --color2: #4464ad;
@@ -26,4 +32,30 @@ h2,
 h3,
 nav {
   font-family: "Plaster", cursive;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  border-style: dashed;
+  border-color: var(--color5);
+  border-width: 10px;
+  padding: 20px;
+}
+
+/*** grids ***/
+
+.grid_2col_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-gap: 10px;
+}
+
+.grid_2col_2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
 }
