@@ -33,9 +33,27 @@ h3,
 nav {
   font-family: "Plaster", cursive;
 }
+p {
+  font-size: 1.2rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--color5);
+}
+
+nav a:hover {
+  color: var(--color3);
+}
+main a:hover {
+  background-color: var(--color5);
+  color: var(--color4);
+  display: block;
+}
 
 main {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -44,18 +62,27 @@ section {
   border-color: var(--color5);
   border-width: 10px;
   padding: 20px;
+
+  margin: 40px;
+}
+
+.grid_h2 h2 {
+  padding-top: 6px;
 }
 
 /*** grids ***/
 
-.grid_2col_1-1 {
+.grid_h2 {
   display: grid;
-  grid-template-columns: 1fr 10fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+  max-width: 100px;
+  padding: 20px 0;
 }
-
-.grid_2col_2-1 {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 10px;
+@media (min-width: 600px) {
+  .grid_2col_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+  }
 }
