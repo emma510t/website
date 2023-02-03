@@ -37,10 +37,39 @@ body#index {
 }
 
 #index p {
-  margin-top: 230px;
+  margin-top: 200px;
   max-width: 350px;
   font-size: 1.8rem;
   background-color: var(--color4);
+}
+
+/*** HEADER ***/
+
+header img {
+  max-width: 60px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: sticky;
+  top: 0;
+  /*box-shadow: 0 2px 0 0 #a3bcf9;*/
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1rem;
+  gap: 35px;
+}
+
+nav a:hover,
+#bread a:hover {
+  color: var(--color3);
 }
 
 h1,
@@ -59,10 +88,7 @@ a:visited {
   color: var(--color5);
 }
 
-nav a:hover {
-  color: var(--color3);
-}
-main a:hover {
+section a:hover {
   background-color: var(--color5);
   color: var(--color4);
   display: block;
@@ -115,6 +141,11 @@ ul.temanav {
   .grid_2col_2-1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+  }
+  .grid_2col_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
 }
