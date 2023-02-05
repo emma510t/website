@@ -78,6 +78,15 @@ h3,
 nav {
   font-family: "Plaster", cursive;
 }
+
+h2 {
+  padding-bottom: 10px;
+}
+
+h1 {
+  padding-bottom: 16px;
+}
+
 p {
   font-size: 1.2rem;
 }
@@ -106,10 +115,6 @@ section {
   padding: 20px;
 
   margin: 40px 0;
-}
-
-.grid_h2 h2 {
-  padding-top: 6px;
 }
 
 .projects {
