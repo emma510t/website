@@ -21,16 +21,21 @@
 
 <body id="index">
     <header>
-        <a href="index.html"><img src="img/logoblack.svg" alt="emhb logo"></a>
+        <div class="logo"><a href="index.html"><img src="img/logoblack.svg" alt="emhb logo"></a></div>
         <nav>
-            <ul>
-                <li>
-                    <a href="projects.html">Portfolio</a>
+            <ul class="navmenu">
+                <li class="navitem">
+                    <a href="projects.html" class="navlink">Portfolio</a>
                 </li>
-                <li>
-                    <a href="about.html">Om mig</a>
+                <li class="navitem">
+                    <a href="about.html" class="navlink">Om mig</a>
                 </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
     <main>
@@ -39,6 +44,7 @@
     <footer>
         <p>EMHB.DK</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -58,7 +58,31 @@ header {
   background-color: var(--color4);
   box-shadow: 0 8px 0 0 var(--color5);
 }
-nav ul {
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 7px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color5);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+nav {
+  min-height: 70px;
+  display: flex;
+}
+
+.navmenu {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -66,6 +90,7 @@ nav ul {
   padding: 0;
   padding-bottom: 1rem;
   gap: 35px;
+  align-items: center;
 }
 
 nav a:hover,
@@ -160,6 +185,59 @@ ul.temanav {
   font-size: 1.1rem;
 }
 
+.blackbg {
+  background-color: var(--color5);
+}
+
+.logo {
+  margin-top: 10px;
+}
+@media (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(16px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .navmenu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--color4);
+    border-color: #170f02;
+    border-width: 2px;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .navitem {
+    margin: 16px 0;
+  }
+
+  .navmenu.active {
+    left: 0;
+  }
+
+  .displaynone {
+    display: none;
+  }
+
+  a.navlink:hover {
+    color: var(--color3);
+  }
+  .logo {
+    padding-bottom: 20px;
+  }
+}
 /*** grids ***/
 
 .grid_h2 {
@@ -178,6 +256,18 @@ ul.temanav {
   .grid_2col_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .grid_2col_5-1 {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .grid_2col_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
   }
 

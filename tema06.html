@@ -23,14 +23,19 @@
     <header>
         <div class="logo"><a href="index.html"><img src="img/logoblack.svg" alt="emhb logo"></a></div>
         <nav>
-            <ul>
-                <li>
-                    <a href="projects.html">Portfolio</a>
+            <ul class="navmenu">
+                <li class="navitem">
+                    <a href="projects.html" class="navlink">Portfolio</a>
                 </li>
-                <li>
-                    <a href="about.html">Om mig</a>
+                <li class="navitem">
+                    <a href="about.html" class="navlink">Om mig</a>
                 </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
     <main>
@@ -38,29 +43,29 @@
             <ul class="temanav">
                 <li><a href="tema02.html">
                         <div class="grid_h2">
-                            <img src="img/triangle.svg" alt="#">
+                            <img src="img/triangle.svg" alt="#" class="displaynone">
                             <h2>02</h2>
                         </div>
                     </a></li>
                 <li><a href="tema03.html">
                         <div class="grid_h2">
-                            <img src="img/circle.svg" alt="#">
+                            <img src="img/circle.svg" alt="#" class="displaynone">
                             <h2>03</h2>
                         </div>
                     </a></li>
                 <li><a href="tema04.html">
                         <div class="grid_h2">
-                            <img src="img/square.svg" alt="#">
+                            <img src="img/square.svg" alt="#" class="displaynone">
                             <h2> 04</h2>
                         </div>
                     </a></li>
                 <li><a href="tema05.html">
-                        <div class="grid_h2"><img src="img/triangle.svg" alt="#">
+                        <div class="grid_h2"><img src="img/triangle.svg" alt="#" class="displaynone">
                             <h2>05</h2>
                         </div>
                     </a></li>
                 <li><a href="tema06.html">
-                        <div class="grid_h2"><img src="img/circle.svg" alt="#">
+                        <div class="grid_h2"><img src="img/circle.svg" alt="#" class="displaynone">
                             <h2 class="marked">06</h2>
                         </div>
                     </a></li>
@@ -70,12 +75,71 @@
         <h1>Tema 06</h1>
         <section>
             <h2>Eksamnensopgave</h2>
-            <img src="img/06_moodboard.webp" alt="Moodboard">
+            <p>Som det allerførste læste jeg opgavebeskrivelsen grundigt igennem, så jeg havde godt styr på hvad der
+                skulle laves. Derefter samlede jeg alt materiale jeg skulle have på mit portfolio-site.</p>
+            <h3>Designprocessen</h3>
+            <div class="grid_2col_5-1">
+                <p>Jeg startede min design proces med at vælge en designstil, som jeg kunne bruge til inspiration. Jeg
+                    besluttede
+                    mig for at,
+                    vælge Bauhaus og gik straks i gang med at undersøge stilen vha. bogen Bauhaus 1919-1933: Workshops
+                    for
+                    Modernity. Jeg lavede også en brainstorm ud fra Bauhaus.
+                    Således kom jeg rem til mit moodboard, som jeg efter designede vider ud fra.</p>
+                <img src="img/06_brainstorm.webp" alt="brainstorm" class="marginimg">
+            </div>
+            <img src="img/06_moodboard.webp" alt="Moodboard" class="marginimg">
+            <p>Så gik jeg i gang med at lave en masse skitser…</p>
+            <h3>Skitser til logo</h3>
+            <div class="grid_2col_2-1">
+                <img src="img/06_skitserlogo.webp" alt="Logo skitser">
+                <div>
+                    <img src="img/logoblack.svg" alt="logo" class="marginimg">
+                    <img src="img/logored.svg" alt="logo" class="marginimg">
+                    <img src="img/logowhite.svg" alt="logo" class="marginimg blackbg">
+                </div>
+            </div>
+            <h3>Skitser til projekt-illustrationer</h3>
+            <div class="grid_2col_2-1">
+                <img src="img/06_skitserillustartioner.webp" alt="skitser" class="marginimg">
+                <div>
+                    <img src="img/grund02copy.svg" alt="illustration" class="marginimg">
+                    <img src="img/ux03copy.svg" alt="illustration" class="marginimg">
+                    <img src="img/ani04copy.svg" alt="illustration" class="marginimg">
+                    <img src="img/ind05copy.svg" alt="illustration" class="marginimg">
+
+                </div>
+            </div>
+            <h3>Skitser til forside</h3>
+            <div class="grid_2col_1-1-1">
+                <img src="img/06_forside1.webp" alt="forside skitse" class="marginimg">
+                <img src="img/06_forside2.webp" alt="forside skitse" class="marginimg">
+                <img src="img/06_forside3.webp" alt="forside skitse" class="marginimg">
+            </div>
+            <p>Efter lavede jeg et sitemap og kom jeg frem til wireframes og lavet også styletile til mit site. Da jeg
+                lavede styletile, besluttede jeg mig for mine to fonte, som begge er inspireret af Bauhaus. Jeg valgte
+                også
+                farver og grafik-elementer.</p>
+            <div class="grid_2col_1-1-1">
+                <img src="img/06_sitemap.webp" alt="sitemap" class="marginimg">
+                <img src="img/06_wireframe.webp" alt="wireframe" class="marginimg">
+                <img src="img/06_styletile.webp" alt="styletile" class="marginimg">
+            </div>
+            <h3>Kodeprocessen</h3>
+            <p>Så gik jeg i gang med at kode. Jeg startede med at sætte det hele op med html – det gik relativt fint
+                uden
+                komplikationer. Så begyndt jeg at style med css vha. stiletyle og wireframes. Jeg har gjort stor brug af
+                grid for at få
+                både mobil og desktop til at virke godt.
+                Til sidst brugte jeg javascript til burgermenuen, så mit site kunne være helt mobil-friendly.
+            </p>
+            <img src="img/06_java.webp" alt="javascript burgermenu" class="marginimg">
         </section>
     </main>
     <footer>
         <p>EMHB.DK</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
