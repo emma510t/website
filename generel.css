@@ -55,8 +55,11 @@ header {
   align-items: baseline;
   position: sticky;
   top: 0;
-  background-color: var(--color4);
   box-shadow: 0 8px 0 0 var(--color5);
+}
+
+header.sub {
+  background-color: var(--color4);
 }
 
 .hamburger {
